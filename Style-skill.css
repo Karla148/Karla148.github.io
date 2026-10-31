@@ -1,0 +1,320 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8FAFC;
+    color: #334155;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+
+header {
+    background-color: #1E3A5F;
+    color: #F8FAFC;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.titulo-container {
+    text-align: center;
+}
+
+.titulo {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.subtitulo {
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* NAVIGATION */
+
+nav {
+    background-color: #333;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+/* SKILLS CARDS */
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+}
+
+.skill-card {
+    width: 300px;
+    height: 300px;
+    background-color: #E2E8F0;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    inset: 0;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-front {
+    background-color: #1E3A5F;
+    color: white;
+    transition: opacity 0.3s;
+}
+
+.card-back {
+    background-color: #14B8A6;
+    color: #1E3A5F;
+    opacity: 0;
+    visibility: hidden;
+    justify-content: flex-start;
+    transition: opacity 0.3s;
+}
+
+.skill-card.active .card-front {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.skill-card.active .card-back {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-back ul {
+    padding-left: 20px;
+    line-height: 2;
+    font-size: 16px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #14B8A6;
+    color: #334155;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 5px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    .img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8FAFC;
+    color: #334155;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+
+header {
+    background-color: #1E3A5F;
+    color: #F8FAFC;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.titulo-container {
+    text-align: center;
+}
+
+.titulo {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.subtitulo {
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* NAVIGATION */
+
+nav {
+    background-color: #333;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+/* SKILLS CARDS */
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+}
+
+.skill-card {
+    width: 300px;
+    height: 300px;
+    background-color: #E2E8F0;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    inset: 0;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-front {
+    background-color: #1E3A5F;
+    color: white;
+    transition: opacity 0.3s;
+}
+
+.card-back {
+    background-color: #14B8A6;
+    color: #1E3A5F;
+    opacity: 0;
+    visibility: hidden;
+    justify-content: flex-start;
+    transition: opacity 0.3s;
+}
+
+.skill-card.active .card-front {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.skill-card.active .card-back {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-back ul {
+    padding-left: 20px;
+    line-height: 2;
+    font-size: 16px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #14B8A6;
+    color: #334155;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 5px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    .img {
+        width: 200px;
+        height: 200px;
+    }
+}
